@@ -12,10 +12,11 @@ class BooksController < ApplicationController
   end
 
   def show
-    @book = Book.find(params[:id])
+    @book = Book.find(params[:id]) #本を一件だけ取得するので@bookにする
   end
 
   def edit
+    @book = Book.find(params[:id])
   end
   
   private
